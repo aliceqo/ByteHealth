@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/sintomas2.css') }}">
+    <title>Sintomas</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo da ByteHealth">
+        <h1 id="nome">ByteHealth</h1>
+    </div>
+
+    <div class="caixa_login">
+        <h1>Quais sintomas você está sentindo</h1>
+
+        <div class="custom-select-container">
+            <div class="custom-select-group">
+                <label for="sintoma26">Sangramento
+                    <input type="checkbox" id="sintoma20" name="sintomas" value="Sangramento">
+                </label>
+                <label for="sintoma12">Perda de olfato
+                    <input type="checkbox" id="sintoma12" name="sintomas" value="Perda de olfato">
+                </label>
+                <label for="sintoma13">Perda de paladar
+                    <input type="checkbox" id="sintoma13" name="sintomas" value="Perda de paladar">
+                </label>
+                <label for="sintoma14">Calafrios
+                    <input type="checkbox" id="sintoma14" name="sintomas" value="Calafrios">
+                </label>
+                <label for="sintoma15">Tontura
+                    <input type="checkbox" id="sintoma15" name="sintomas" value="Tontura">
+                </label>
+            </div>
+            
+            <div class="custom-select-group">
+                <label for="sintoma16">Inchaço
+                    <input type="checkbox" id="sintoma16" name="sintomas" value="Inchaço">
+                </label>
+                <label for="sintoma17">Irritação na pele
+                    <input type="checkbox" id="sintoma17" name="sintomas" value="Irritação na pele">
+                </label>
+                <label for="sintoma18">Dor abdominal
+                    <input type="checkbox" id="sintoma18" name="sintomas" value="Dor abdominal">
+                </label>
+                <label for="sintoma19">Dificuldade para respirar
+                    <input type="checkbox" id="sintoma19" name="sintomas" value="Dificuldade para respirar">
+                </label>
+                <label for="sintoma20">Perca de consciência
+                    <input type="checkbox" id="sintoma20" name="sintomas" value="Perda de consciência">
+                </label>
+            </div>
+        </div>
+
+        <div class="botao">
+            <button type="submit" id="proximaSintomas3">PRÓXIMO</button>
+        </div>
+
+        <div class="voltar2">
+            <button type="submit" id="voltar2">VOLTAR</button>
+        </div>
+        
+        <div class="chat">
+            <button id="CHAT">
+                <a href="/chatbot">
+                    <span class="material-symbols-outlined">chat</span>
+                <a/>
+            </button>
+        </div>  
+    </div>
+
+    <script src="{{ url_for('static', filename='Script/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='Script/chatbot.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='Script/sintomas.js') }}"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js"></script>
+
+</body>
+</html>

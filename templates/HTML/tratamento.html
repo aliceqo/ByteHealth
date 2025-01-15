@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/tratamento.css') }}">
+    <title>ByteHealth</title>
+</head>
+
+
+<body>
+    <div class="logo">
+        <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo da ByteHealth">
+        <h1 id="nome">ByteHealth</h1>
+    </div>
+
+    <div class="caixa_login">
+        <h1>Está em algum tratamento no momento, se sim, 
+            faz uso de algum medicamento contínuo?</h1>
+
+            <div id="doenca-quadro-container">
+                <div class="doenca-quadro">
+                    <div class="input_box">
+                        <input type="text" autocomplete="off" name="tratamento" id="tratamento" placeholder="Tratamento" required>
+                        <input type="text" autocomplete="off" name="remedio" id="remedio" placeholder="Remédio" required>
+                    </div>
+                    <button class="adicionar-btn" onclick="adicionarDoenca()">Adicionar</button>
+                </div>
+            </div>
+        
+            <button class="mais-btn" onclick="adicionarNovoQuadro()"><span class="material-symbols-outlined">add</span></button>
+
+        <div class="botao">
+            <button id="Confirmar6" onclick="Confirmar6()">CONFIRMAR</button>
+        </div> 
+
+        <div class="voltar1">
+            <a href="/confirmar-sintomas">
+                <button id="Voltar5" onclick="Voltar5()">VOLTAR</button>
+            </a>
+        </div>
+
+        <div class="chat">
+            <button id="CHAT">
+                <a href="/chatbot">
+                    <span class="material-symbols-outlined">chat</span>
+                <a/>
+            </button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='Script/tratamento.js') }}"></script>
+    <script src="{{ url_for('static', filename='Script/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='Script/chatbot.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='Script/senha.js') }}"></script>
+    <script src="{{ url_for('static', filename='Script/especialidade.js') }}"></script>
+
+</body>
+</html>

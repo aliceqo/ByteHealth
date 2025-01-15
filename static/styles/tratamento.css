@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../img/fundo2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 150px; 
+}
+
+.logo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute; 
+    top: 20px;
+}
+
+#logo {
+    width: 115px;
+    height: 114px;
+}
+
+#nome {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.caixa_login {
+    background-color: rgba(0, 119, 182, 0.5);
+    width: 968px;
+    min-height: 600px;
+    height: auto;
+    position: relative;
+    margin-top: 110px; 
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.caixa_login h1 {
+    color: #fff;
+    font-size: 36px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.input_box input {
+    width: 80%;
+    height: 50px;
+    background: #0077B6;
+    margin: 30px 0;
+    outline: none;
+    border-radius: 10px;
+}
+
+.input_box input::placeholder {
+    color: #fff;
+}
+
+.input_box input:hover {
+    background: #2a86b8;
+}
+
+.botao button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 216px;     
+    height: 81px;
+    border: none;
+    border-radius: 10px;
+    background-color: #03045E;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    font-size: 32px;
+    transform: translate(50%, 150%);
+} 
+
+button:hover {
+    background-color: #0f1061;
+}
+
+.voltar1 button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 216px;     
+    height: 81px;
+    border: none;
+    border-radius: 10px;
+    background-color: #03045E;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    font-size: 32px;
+    transform: translate(-70%, 50%);
+}  
+
+.voltar1 button:hover {
+    background-color: #0f1061;
+} 
+
+.chat button {
+    color: #fff;
+    background: #0077B6;
+    width: 80px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    margin-top: -10vh; 
+    margin-right: 20px; 
+    position: absolute; 
+    right: 20px; 
+}
+
+.material-symbols-outlined {
+    display: grid;
+    font-size: 25px;
+}
+
+.chat button {
+    color: #fff;
+    background: #0077B6;
+    border-radius: 50%;
+   border: none;
+    width: 80px;
+    height: 70px;
+    transform: translate(20%, 80%); 
+}
+
+.chat button:hover {
+    background: #0c82c2;
+}
+
+.doenca-quadro {
+    background-color: rgba(0, 119, 182, 0.5);
+    width: 800px;
+    height: 90px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.doenca-quadro.resumido {
+    background-color: rgba(0, 119, 182, 0.5);
+    color: #fff;
+    width: 800px;
+    height: 20px;
+    padding: 20px;
+}
+
+.input_box {
+    display: flex;
+    gap: 10px;
+}
+
+.input_box input {
+    width: 45%;
+    height: 20px;
+    font-size: 20px;
+    background: #0077B6;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: -3px;
+}
+
+.input_box input::placeholder {
+    color: #fff;
+}
+
+.adicionar-btn, .mais-btn, .editar-btn {
+    margin-top: -10px;
+    background-color: #03045E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.resumo-editar-btn {
+    margin-top: -35px;
+    background-color: #03045E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    float: right; 
+}
+
+.resumo-excluir-btn {
+    margin-top: -35px;
+    background-color: #03045E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    float: right;
+    margin-right: 5px;
+}
+
+.adicionar-btn:hover, .mais-btn:hover, .editar-btn, .resumo-editar-btn, .resumo-excluir-btn {
+    background-color: #0f1061;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}

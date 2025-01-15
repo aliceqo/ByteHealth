@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/sintomas1.css') }}">
+    <title>Sintomas</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo da ByteHealth">
+        <h1 id="nome">ByteHealth</h1>
+    </div>
+
+    <div class="caixa_login">
+        <h1>Quais sintomas você está sentindo</h1>
+
+        <div class="custom-select-container">
+            <div class="custom-select-group">
+                <label for="sintoma1">Febre
+                    <input type="checkbox" id="sintoma1" name="sintomas" value="Febre">
+                </label>
+                <label for="sintoma2">Dor de cabeça
+                    <input type="checkbox" id="sintoma2" name="sintomas" value="Dor de cabeça">
+                </label>
+                <label for="sintoma3">Tosse
+                    <input type="checkbox" id="sintoma3" name="sintomas" value="Tosse">
+                </label>
+                <label for="sintoma4">Falta de ar
+                    <input type="checkbox" id="sintoma4" name="sintomas" value="Falta de ar">
+                </label>
+                <label for="sintoma5">Dor no peito
+                    <input type="checkbox" id="sintoma5" name="sintomas" value="Dor no peito">
+                </label>
+            </div>
+            
+            <div class="custom-select-group">
+                <label for="sintoma6">Náusea
+                    <input type="checkbox" id="sintoma6" name="sintomas" value="Náusea">
+                </label>
+                <label for="sintoma7">Vômito
+                    <input type="checkbox" id="sintoma7" name="sintomas" value="Vômito">
+                </label>
+                <label for="sintoma8">Diarreia
+                    <input type="checkbox" id="sintoma8" name="sintomas" value="Diarreia">
+                </label>
+                <label for="sintoma9">Dores musculares
+                    <input type="checkbox" id="sintoma9" name="sintomas" value="Dores musculares">
+                </label>
+                <label for="sintoma10">Cansaço excessivo
+                    <input type="checkbox" id="sintoma10" name="sintomas" value="Cansaço excessivo">
+                </label>
+            </div>
+        </div>
+
+        <div class="botao">
+            <button type="submit" id="proximaSintomas2">PRÓXIMO</button>
+        </div>
+       
+        <div class="voltar1">
+            <button id="voltar1" onclick="voltar1()">VOLTAR</button>
+        </div>      
+        
+        <div class="chat">
+            <button id="CHAT">
+                <a href="/chatbot">
+                    <span class="material-symbols-outlined">chat</span>
+                <a/>
+            </button>
+        </div>  
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='Script/script.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='Script/routes.js') }}"></script>
+    <script src="{{ url_for('static', filename='Script/chatbot.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='Script/sintomas.js') }}"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js"></script>
+    
+</body>
+</html>

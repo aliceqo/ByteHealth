@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/enfermeiro.css') }}">
+    <title>ByteHealth</title>
+</head>
+
+<body>
+
+    <div class="caixa_login">
+
+        <div class="logo">
+            <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo da ByteHealth">
+            <h1 id="nome">ByteHealth</h1>
+        </div> 
+
+       <div class="foto-paciente">FOTO-PACIENTE</div> 
+       <div class="nome-paciente">Nome do paciente</div>
+       <div class="nascimento-paciente">dd/mm/aaaa</div>
+       <div class="endereco-paciente">Endereço do paciente</div> 
+       <div class="cpf-paciente">CPF do paciente</div>
+       <div class="sus-paciente">Numero da carteirinha do SUS</div>
+       <div class="sintomas-paciente">Sintomas do paciente</div>
+       <div class="tratamento-paciente">Tratamento do paciente</div>
+       <div class="remedios-paciente">Remédios que o paciente toma</div>
+
+       <div class="botao"><a href="/cadastro">
+                <button onclick="EDITAR()">EDITAR</button>
+            <a/>
+       </div>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='Script/enfermeiro.js') }}"></script>
+</body>
+</html>

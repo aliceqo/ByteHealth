@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/registro.css') }}">
+    <script type="module" src="{{ url_for('static', filename='Script/register.js') }}"></script>
+    <title>Tela de Cadastro</title>
+</head>
+<body> 
+    <div class="caixa_login">
+        <h1 id="titulo">Cadastro de Paciente</h1>
+
+        <form method="post" class="form-cadastro" id="form-cadastro">
+            <input type="text" id="nomePaciente" name="nome" placeholder="Nome Completo" class="nome-paciente" required>
+            <input type="email" id="email" name="email" placeholder="E-mail" class="campo-padrao" required>
+            <input type="password" id="senha" name="senha" placeholder="Senha" class="campo-padrao" required> 
+            <input type="text" id="cpf" name="cpf" placeholder="CPF" class="cpf-paciente" maxlength="14" required>
+            <input type="text" id="cartao-sus" name="sus" placeholder="Cartão SUS" class="sus-paciente" maxlength="18" required>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" class="campo-padrao" maxlength="15" required>
+            <input type="date" id="data-nascimento" name="data-nascimento" class="nascimento-paciente" required>
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço" class="endereco-paciente" required>
+            <select id="sexo" name="sexo" class="campo-padrao" required>
+                <option value="">Sexo</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+            <button type="submit" id="submit">Cadastrar</button>
+        </form>
+
+        <a class="btn-login" href="{{ url_for('segunda.index') }}">Ir para Login</a>
+    </div>
+ 
+</body>
+</html>

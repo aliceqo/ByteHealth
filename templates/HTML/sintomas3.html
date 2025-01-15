@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/sintomas3.css') }}">
+    <title>Sintomas</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo da ByteHealth">
+        <h1 id="nome">ByteHealth</h1>
+    </div>
+
+    <div class="caixa_login">
+        <h1>Quais sintomas você está sentindo</h1>
+
+        <div class="custom-select-container">
+            <div class="custom-select-group">
+                <label for="sintoma21">Palpitações
+                    <input type="checkbox" id="sintoma21" name="sintomas" value="Palpitações">
+                </label>
+                <label for="sintoma22">Erupçoes cutâneas
+                    <input type="checkbox" id="sintoma22" name="sintomas" value="Erupçoes cutâneas">
+                </label>
+                <label for="sintoma25">Perca de olfato
+                    <input type="checkbox" id="sintoma25" name="sintomas" value="Perca de olfato">
+                </label>
+                <label for="sintoma24">Perca de apetite
+                    <input type="checkbox" id="sintoma24" name="sintomas" value="Perca de apetite">
+                </label>
+                <label for="sintoma23">Dormênica/Formigamento
+                    <input type="checkbox" id="sintoma23" name="sintomas" value="Dormênica ou Formigamento">
+                </label>
+            </div>
+            
+            <div class="custom-select-group">
+                <label for="Outros">
+                    <input type="checkbox" id="sintomas25" name="sintomas" value="Outros">Outros
+                </label>
+            </div>
+        </div>
+
+        <div class="botao">
+            <button type="submit" id="confirmarSintomas">PRÓXIMO</button>
+        </div>
+
+        <div class="voltar3">
+            <button type="submit" id="voltar3">VOLTAR</button>
+        </div>
+
+        <div class="chat">
+            <button id="CHAT">
+                <a href="/chatbot">
+                    <span class="material-symbols-outlined">chat</span>
+                <a/>
+            </button>
+        </div>
+    </div>
+
+    
+    <script src="{{ url_for('static', filename='Script/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='Script/chatbot.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='Script/sintomas.js') }}"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js"></script>
+
+</body>
+</html>

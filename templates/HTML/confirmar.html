@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chat" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/confirmar.css') }}">
+    <title>ByteHealth</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo da ByteHealth">
+        <h1 id="nome">ByteHealth</h1>
+    </div>
+
+    <div class="caixa_login">
+        <h1>Confirme se é você mesmo</h1>
+        <div class="nome_pessoa">
+            <br><br><h1 id="nome_usuario">Você é Fulano da Silva</h1> 
+            <br>
+            <h1>Nº da carteirinha do sus</h1>
+            <h1 id="numero_sus"></h1>
+        </div>
+
+        <div class="botao">
+            <button id="Confirmar" onclick="Confirmar()">CONFIRMAR</button>
+        </div>
+        
+        <div class="voltar">
+            <a href="/index">
+                <button id="Voltar">VOLTAR</button>
+            </a>
+        </div>        
+
+        <div class="chat">
+            <button id="CHAT">
+                <a href="/chatbot">
+                    <span class="material-symbols-outlined">chat</span>
+                <a/>
+            </button>
+        </div>        
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='Script/confirmar-user.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='Script/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='Script/chatbot.js') }}"></script>
+
+</body>
+</html>
