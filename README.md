@@ -31,8 +31,8 @@ Com a implementação do ByteHealth, espera-se alcançar diversos benefícios pa
 
 ## Tecnologias Usadas:
 
-- Frontend: HTML, CSS, JavaScript e para designer Figma.
-- Backend: Python.
+- Front-end: HTML, CSS, JavaScript e para designer Figma.
+- Back-end: Python.
 - Inteligência Artificial: Python (para o chatbot e análise de sintomas).
 - Banco de Dados: Firebase.
 - Ambiente de Desenvolvimento: Visual Studio Code (VSCode).  
